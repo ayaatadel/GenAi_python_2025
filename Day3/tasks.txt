@@ -1,0 +1,4 @@
+generate web api liske chatgpt ==> support image and text 
+===> can take image and you can ask questions for this image
+
+==============> using Django

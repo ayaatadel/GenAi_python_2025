@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hr-header">
+      <img
+        src="hr-logo.svg"
+        alt="HR Logo"
+        style="
+          height: 36px;
+          width: 36px;
+          margin-right: 0.7rem;
+          vertical-align: middle;
+        "
+      />
+      HR Management System
+    </div>
+    <div class="hr-bg-illustration">
+      <svg width="340" height="180" viewBox="0 0 340 180" fill="none">
+        <ellipse
+          cx="170"
+          cy="90"
+          rx="160"
+          ry="70"
+          fill="#60a5fa"
+          opacity="0.08"
+        />
+        <ellipse
+          cx="100"
+          cy="120"
+          rx="40"
+          ry="18"
+          fill="#3b82f6"
+          opacity="0.06"
+        />
+        <ellipse
+          cx="250"
+          cy="60"
+          rx="30"
+          ry="12"
+          fill="#60a5fa"
+          opacity="0.06"
+        />
+      </svg>
+    </div>
+    <div
+      class="hr-main-flex"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        z-index: 1;
+        position: relative;
+      "
+    >
+      <div class="hr-side-illustration">
+        <svg width="220" height="220" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="110" cy="110" rx="100" ry="90" fill="#1e293b"/>
+          <circle cx="110" cy="90" r="32" fill="#60a5fa"/>
+          <ellipse cx="110" cy="160" rx="60" ry="28" fill="#3b82f6"/>
+          <circle cx="60" cy="130" r="16" fill="#60a5fa"/>
+          <circle cx="160" cy="130" r="16" fill="#60a5fa"/>
+          <rect x="80" y="120" width="60" height="18" rx="9" fill="#e2e8f0" opacity="0.7"/>
+          <rect x="95" y="70" width="30" height="8" rx="4" fill="#e2e8f0" opacity="0.7"/>
+        </svg>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1rem;
+          "
+        >
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            style="margin-bottom: 0.5rem"
+          >
+            <circle cx="12" cy="12" r="10" fill="#a1c4fd" />
+            <path
+              d="M8 13c0-1.657 1.79-3 4-3s4 1.343 4 3"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="12" cy="9" r="2" fill="#fff" />
+          </svg>
+          <h2>Create Account</h2>
+        </div>
+        <form id="register-form" aria-label="Register form">
+          <label style="display: none" for="register-username">Username</label>
+          <input
+            id="register-username"
+            type="text"
+            name="username"
+            placeholder="Username"
+            aria-label="Username"
+            required
+          />
+          <label style="display: none" for="register-email">Email</label>
+          <input
+            id="register-email"
+            type="email"
+            name="email"
+            placeholder="Email"
+            aria-label="Email"
+            required
+          />
+          <label style="display: none" for="register-password">Password</label>
+          <input
+            id="register-password"
+            type="password"
+            name="password"
+            placeholder="Password"
+            aria-label="Password"
+            required
+          />
+          <label style="display: none" for="register-confirm-password"
+            >Confirm Password</label
+          >
+          <input
+            id="register-confirm-password"
+            type="password"
+            name="confirm_password"
+            placeholder="Confirm Password"
+            aria-label="Confirm Password"
+            required
+          />
+          <button type="submit">Register</button>
+        </form>
+        <div class="links">
+          <a href="index.html">Login</a>
+          <a href="#">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
